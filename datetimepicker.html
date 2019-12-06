@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Store Finder</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="C:\Users\USER\Desktop\Store Finder\storeFinder.css">
+</head>
+
+<body>
+    <!-- the navbar -->
+    <nav class="navbar navbar-toggleable-md navbar-light">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+        <a class="navbar-brand" href="#">Navbar</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="blockquote text-center card border-light mx-auto" style="max-width: 50rem;">
+
+            <div class="headings">
+                <!-- Headings -->
+                <h3 class="card-title">SHOPS IN MALL</h3>
+                <h5 class="card-text">Find the store you need quickly and easily</h5>
+            </div>
+
+            <div class="inputFields">
+                <!-- Input search field -->
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search by store name" aria-label="searchby 
+  storename">
+                    <div class="input-group-append">
+                        <!--appends the dropdowns and search button to the input 
+search field -->
+                        <!--dropdown buttons -->
+                        <div class="btn-group">
+                            <!--keeps the dropdowns together while allowing to have different 
+menu item lists -->
+                            <button id="categoryDropdown" class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Choose 
+Category</button>
+                            <div class="dropdown-menu">
+                                <a id="ddElectronics" class="dropdown-item" href="#">Electronics</a>
+                                <a id="ddFashion" class="dropdown-item" href="#">Fashion</a>
+                                <a id="ddKids" class="dropdown-item" href="#">Kids</a>
+                                <a id="ddSports" class="dropdown-item" href="#">Sports wear and accessories</a>
+                                <a id="ddFood" class="dropdown-item" href="#">Food</a>
+                                <!-- <div role="separator" class="dropdown-divider"></div>  -->
+
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <!--keeps the dropdowns together while allowing to have different menu 
+item lists -->
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data- toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select floor</button>
+                            <div class="dropdown-menu floors">
+                                <a id="ddLg" class="dropdown-item floors" href="#">LG</a>
+                                <a id="ddUg" class="dropdown-item floors" href="#">UG</a>
+                                <a id="ddOne" class="dropdown-item floors" href="#">1</a>
+                                <a id="ddTwo" class="dropdown-item floors" href="#">2</a>
+                                <a id="ddThree" class="dropdown-item floors" href="#">3</a>
+                                <a id="ddFour" class="dropdown-item floors" href="#">4</a>
+                            </div>
+                        </div>
+                        <button type="button" id="searchBtn" class="btn btn-outline-secondary">Search</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--The big box with shadow effect containing the buttons-->
+            <div id="circleContainer" class="card-body shadow p-3 mb-5 bg-white rounded">
+                <div id="circle-buttons" class="btnDiv">
+
+                    <ul id="btnList" class="btnList"></ul>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384- 
+ q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="C:\Users\USER\Desktop\Store Finder\storeFinder.js"></script>
+
+
+
+
+    .btn-circle.btn-xl { width: 100px; height: 100px; padding: 10px 16px; border-radius: 50px; font-size: 12px; text-align: center; box-shadow: 5px 5px 30px 5px rgba(0,0,0,0.25); } #circleContainer { position: relative; width: 100%; height: 100%; } .btnList
+    { list-style: none; } .btnList li { float: left; -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */ transition: all 2s ease 5s; } /*Rotate and translate the circle buttons*/ .animate { animation-name: example; animation-duration: 5s; animation-fill-mode:
+    forwards; /*stops the animation at the last frame, stops it from going back to the original position*/ } /*Rotate the inner html of the buttons back to the upright position*/ .animateBtnHtml { animation-name: btnInnerHtml; animation-duration: 5s;
+    animation-delay: 5s; animation-fill-mode: forwards; } @keyframes example{ 100% {transform: rotate(-180deg) translate(-200px,-200px);} } @keyframes btnInnerHtml{ 100% {transform: rotate(180deg);} } //categories array definitions var categoryElectronics
+    = ['Croma','Fuji','Aptronix','Joway','Miniso','Reliance Digital','Oppo Store','Wonder Chef']; var categoryFashion = ['American Eagle','Calvin Klien','Global Desi','Lifestyle','M&S','Maanyavar','Mebaz','Pantaloons','Tommy Hilfiger','Westside']; var
+    categoryKids = ['Apple of my i','Born Babies','FBB Kids','First Cry','Gini & Jony','Mom & Me']; var categorySports = ['Adidas','Columbia','Fila','Nike','Reebok','Speedo','Puma','Yonex']; var categoryFood = ['Taco Bell','KFC','Pizza Hut','Pista House','Mc
+    Donalds','Cream Stone','Drunken Monkey','Subway','Dominos','Burger King']; //floors array definition var floorLg = ['Spar','Fbb','Miniso','Reliance Trends','Nike','Fila','Puma','KFC','Pizza Hut','Taco Bell']; var floorUg = ['Mac','Lifestyle','Caretlane','Starbucks','M&S','Da
+    Milano','Fossil','Westside','Shoppers stop','Aldo']; var floorOne = ['Lifestyle','Centro','Yoyoso','Max','Cafe Coffeeday','Allen solly','Van Husen','Trueblue','Basics','Bata']; var floorTwo = ['Home Center','Reliance Digital','Croma','Danube Home','Samsung','Super
+    99','Urban ladder','Bblunt','Marie claire','Cafe54']; var floorThree = ['Neerus','W','Aurelia','Dominos','Firstcry','Health & glow','Ritu kumar','Toy globe','One friday','Mebaz']; var floorFour = ['Bazaar','Hamleys','AMB','Sky zone','Karachi bakery','Food
+    court','Tridom','Vr gaming','Scary house','Market 99']; //Search array definition var searchArr = ['AMB','Spar','Food Court','Bazaar','Lifestyle','Reliance Digital','Croma','Hamleys','Sky zone','M&S','Starbucks','Home Center','Centro','Shoppers Stop','Mayfair'];
+    //on click actions for the category Electronics $('#ddElectronics').click(function(e) { e.preventDefault();// prevent the default anchor functionality //calling the genButtons functions for the dropdown item selected; genButtons(categoryElectronics);
+    //adding the animate class to each button inside list item var btns = document.getElementsByTagName('li'); $.each(btns, function(i,l){ $(l).addClass('animate'); //adding animate class to li element $(l).children('button').addClass('animateBtnHtml');
+    //adding the animateBtnHtml class to button element inside li to rotate the names. }); }); //on click actions for the category Fashion $('#ddFashion').click(function(e) { e.preventDefault();// prevent the default anchor functionality //calling the
+    genButtons functions for the dropdown item selected; genButtons(categoryFashion); //adding the animate class to each button inside list item var btns = document.getElementsByTagName('li'); $.each(btns, function(i,l){ $(l).addClass('animate'); //adding
+    animate class to li element $(l).children('button').addClass('animateBtnHtml'); //adding the animateBtnHtml class to button element inside li to rotate the names. }); }); //on click actions for the category kids $('#ddKids').click(function(e) { e.preventDefault();//
+    prevent the default anchor functionality //calling the genButtons functions for the dropdown item selected; genButtons(categoryKids); //adding the animate class to each button inside list item var btns = document.getElementsByTagName('li'); $.each(btns,
+    function(i,l){ $(l).addClass('animate'); //adding animate class to li element $(l).children('button').addClass('animateBtnHtml'); //adding the animateBtnHtml class to button element inside li to rotate the names. }); }); //on click actions for the
+    category Sports $('#ddSports').click(function(e) { e.preventDefault();// prevent the default anchor functionality //calling the genButtons functions for the dropdown item selected; genButtons(categorySports); //adding the animate class to each button
+    inside list item var btns = document.getElementsByTagName('li'); $.each(btns, function(i,l){ $(l).addClass('animate'); //adding animate class to li element $(l).children('button').addClass('animateBtnHtml'); //adding the animateBtnHtml class to button
+    element inside li to rotate the names. }); }); //on click actions for the category Food $('#ddFood').click(function(e) { e.preventDefault();// prevent the default anchor functionality //calling the genButtons functions for the dropdown item selected;
+    genButtons(categoryFood); //adding the animate class to each button inside list item var btns = document.getElementsByTagName('li'); $.each(btns, function(i,l){ $(l).addClass('animate'); //adding animate class to li element $(l).children('button').addClass('animateBtnHtml');
+    //adding the animateBtnHtml class to button element inside li to rotate the names. }); }); //on click actions for the category LG Floor $('#ddLg').click(function(e) { e.preventDefault();// prevent the default anchor functionality //calling the genButtons
+    functions for the dropdown item selected; genButtons(floorLg); //adding the animate class to each button inside list item var btns = document.getElementsByTagName('li'); $.each(btns, function(i,l){ $(l).addClass('animate'); //adding animate class
+    to li element $(l).children('button').addClass('animateBtnHtml'); //adding the animateBtnHtml class to button element inside li to rotate the names. }); }); //on click actions for the category UG Floor $('#ddUg').click(function(e) { e.preventDefault();//
+    prevent the default anchor functionality //calling the genButtons functions for the dropdown item selected; genButtons(floorUg); //adding the animate class to each button inside list item var btns = document.getElementsByTagName('li'); $.each(btns,
+    function(i,l){ $(l).addClass('animate'); //adding animate class to li element $(l).children('button').addClass('animateBtnHtml'); //adding the animateBtnHtml class to button element inside li to rotate the names. }); }); //on click actions for the
+    category Floor one $('#ddOne').click(function(e) { e.preventDefault();// prevent the default anchor functionality //calling the genButtons functions for the dropdown item selected; genButtons(floorOne); //adding the animate class to each button inside
+    list item var btns = document.getElementsByTagName('li'); $.each(btns, function(i,l){ $(l).addClass('animate'); //adding animate class to li element $(l).children('button').addClass('animateBtnHtml'); //adding the animateBtnHtml class to button element
+    inside li to rotate the names. }); }); //on click actions for the category Floor two $('#ddTwo').click(function(e) { e.preventDefault();// prevent the default anchor functionality //calling the genButtons functions for the dropdown item selected;
+    genButtons(floorTwo); //adding the animate class to each button inside list item var btns = document.getElementsByTagName('li'); $.each(btns, function(i,l){ $(l).addClass('animate'); //adding animate class to li element $(l).children('button').addClass('animateBtnHtml');
+    //adding the animateBtnHtml class to button element inside li to rotate the names. }); }); //on click actions for the category Floor Three $('#ddThree').click(function(e) { e.preventDefault();// prevent the default anchor functionality //calling the
+    genButtons functions for the dropdown item selected; genButtons(floorThree); //adding the animate class to each button inside list item var btns = document.getElementsByTagName('li'); $.each(btns, function(i,l){ $(l).addClass('animate'); //adding
+    animate class to li element $(l).children('button').addClass('animateBtnHtml'); //adding the animateBtnHtml class to button element inside li to rotate the names. }); }); //on click actions for the category Floor Four $('#ddFour').click(function(e)
+    { e.preventDefault();// prevent the default anchor functionality //calling the genButtons functions for the dropdown item selected; genButtons(floorFour); //adding the animate class to each button inside list item var btns = document.getElementsByTagName('li');
+    $.each(btns, function(i,l){ $(l).addClass('animate'); //adding animate class to li element $(l).children('button').addClass('animateBtnHtml'); //adding the animateBtnHtml class to button element inside li to rotate the names. }); }); //Function to
+    dynamically generate the circle buttons for the categoty selected from the dropdown menus var catArr; function genButtons(catArr) { var categoryArray = catArr; var totalRecords = 500; //part of dynamic button generation script var recordsPerPage =
+    50; //part of dynamic button generation script var className; //part of dynamic button generation script var totalButtons = totalRecords/recordsPerPage; //part of dynamic button generation script var circleButtonsDiv = document.getElementById("circle-buttons");
+    //part of dynamic button generation script console.log(totalButtons) var btnColors = ['btn-primary','btn-secondary','btn-success','btn-danger','btn-warning','btn-light','btn-dark','btn-primary','btn-secondary','btn-success','btn-danger','btn-warning','btn-light','btn-dark','btn-primary'];
+    //bootstrap button colors var btnColorLen = btnColors.length; //bootstrap button colors console.log("length = "+btnColorLen); //bootstrap button colors var btnList = document.getElementById("btnList"); //UL $('#btnList').empty(); var arrLength = categoryArray.length;
+    console.log("Length inside function = "+arrLength); for(var i=0; i<arrLength; i++) { var button=d ocument.createElement( "button");//creating button button.innerHTML=c ategoryArray[i]; //put store name from the array as title for the button //circleButtonsDiv.appendChild(button);//appending
+        button to div className="btn " +btnColors[i]+ " btn-circle btn-xl"; console.log( "className = "+className); $(button).addClass(className); button.setAttribute( "id", "circleBtns"); var node=d ocument.createElement( "li"); //creating a list item node.appendChild(button);
+    //adding button element to list item btnList.appendChild(node); //adding list item to ul //Event Listener for when one of the circle buttons are clicked button.addEventListener( "click", function(event) { var btn=e vent.target; var btnName=b tn.innerHTML;
+    //get the name of the button clicked var btnPressed=b tn.getAttribute( "Clicked on "+btnName); //message to show in the alert circleButtonsDiv.appendChild(btn); alert( "Clicked on "+btnName); // goto(page) -- write your function for getting the records
+        for page[page] }); } return; }

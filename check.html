@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+<style>
+    .nav-pills>li.active>a,
+    .nav-pills>li.active>a:focus,
+    .nav-pills>li.active>a:hover {
+        border: 0;
+        background-color: #fff;
+    }
+    
+    .nav-pills>li.active {
+        border-bottom: 3px solid #005DA8 !important;
+    }
+    
+    .breadcrumb {
+        background: #ddd;
+        background-color: #e9ecef !important;
+        display: inline-block !important;
+        padding: 1px;
+        padding-right: 15px;
+    }
+    
+    .breadcrumb li {
+        display: inline-block;
+        background: white;
+        padding: 0;
+        position: relative;
+        min-width: 50px;
+        text-decoration: none;
+        -webkit-clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%, 15px 50%);
+        clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%, 15px 50%);
+        margin-right: -13px;
+    }
+    
+    .breadcrumb li#last {
+        -webkit-clip-path: polygon(0 0, calc(100% - 0px) 0, 100% 50%, calc(100% - 0px) 100%, 0 100%, 15px 50%);
+        clip-path: polygon(0 0, calc(100% - 0px) 0, 100% 50%, calc(100% - 0px) 100%, 0 100%, 15px 50%);
+    }
+    
+    .breadcrumb li:hover {
+        color: white;
+        background: #fff;
+    }
+    /* first link should not have anything cliped on the left side */
+    
+    .breadcrumb li:first-child {
+        -webkit-clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%);
+        clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%);
+    }
+    
+    .label {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .col-sm-3,
+    .col-md-3,
+    .col-lg-3 {
+        position: relative;
+        width: 100vw;
+        padding-right: 15px;
+        padding-left: 15px
+    }
+</style>
+
+<body>
+    <div class="centerTab">
+        <div class="container breadcrumb">
+            <ul class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
+                <div class="row">
+                    <li class="nav-item col-3 col-sm-3 col-md-3 col-lg-3">
+                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-1" role="tab">Your Information</a>
+                    </li>
+                    <li class="nav-item col-3 col-sm-3 col-md-3 col-lg-3">
+                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-2" role="tab">Service
+                            Requirements</a>
+                    </li>
+                    <li class="nav-item col-3 col-sm-3 col-md-3 col-lg-3">
+                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-3" role="tab">Documents Needed</a>
+                    </li>
+                    <li class="nav-item col-3 col-sm-3 col-md-3 col-lg-3">
+                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-4" role="tab">Thank
+                            You!</a>
+                    </li>
+            </ul>
+            </div>
+        </div>
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

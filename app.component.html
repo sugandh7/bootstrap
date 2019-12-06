@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+    <style>
+        section {
+            background-color: #ede6c1;
+            padding: 15px;
+            margin: auto;
+            text-align: center;
+        }
+        
+        p {
+            font-family: "Times New Roman", Times, serif;
+            color: #080000;
+        }
+        
+        article {
+            border: black;
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            margin: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            font-family: Arial;
+        }
+        /* two equal columns that floats next to each other */
+        
+        .row {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+            justify-content: center;
+        }
+        
+        .column {
+            -ms-flex: 25%;
+            /* IE10 */
+            flex: 20%;
+            max-width: 20%;
+            padding: 0 4px;
+            margin: 30px;
+        }
+        
+        .menu-button {
+            background-color: rgba(85, 100, 83, 0.8);
+            padding: 20px 0;
+            font-size: 30px;
+            margin: 10px;
+            width: 200px;
+            min-width: 100px;
+            border-radius: 25px;
+            box-shadow: 5px 5px 5px rgba(71, 69, 69, 0.787);
+        }
+        
+        .menu-button:hover {
+            width: 200px;
+            height: 40%;
+            box-shadow: 1px 1px 1px rgba(71, 69, 69, 0.787);
+            color: black;
+        }
+        
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: rgba(71, 69, 69, 0.787);
+            text-decoration: none;
+        }
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        
+        @media screen and (max-width: 800px) {
+            .column {
+                -ms-flex: 50%;
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 600px) {
+            .column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section>
+        <article>
+            <h1>Seattle Colours</h1>
+            <div class="row">
+                <div class="column">
+
+                    <a class="menu-button" href="../Wood-Type/index-wood-type.html" role="button" style="width:100%">Wood
+                     type</a>
+
+
+                    <a class="menu-button" href="../Wood-Type/.html" role="button" style="width:100%">Specification</a>
+
+                    <a class="menu-button" href="../Wood-Type/.html" role="button" style="width:100%">Pricing</a>
+
+                </div>
+
+                <div class="column">
+                    <a class="menu-button" href="../Wood-Type/.html" role="button" style="width:100%">News</a>
+
+
+                    <a class="menu-button" href="../Wood-Type/.html" role="button" style="width:100%">FAQ</a>
+
+                    <a class="menu-button" href="../Wood-Type/index-wood-type.html" role="button" style="width:100%">Images</a>
+
+                </div>
+            </div>
+        </article>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
